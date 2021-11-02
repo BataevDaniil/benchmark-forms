@@ -1,16 +1,20 @@
-import { Field, FieldRenderProps, Form } from "react-final-form"
+import { Formik, Form, Field, FieldProps } from "formik"
+
 import React from "react"
 import { count, deep } from "./config"
 
-export const FinalForm = () => {
+const init = { "input-0": "112" }
+export const FormikForm = () => {
   return (
-    <Form onSubmit={console.log} subscription={{}}>
-      {({ handleSubmit }) => (
-        <form onSubmit={handleSubmit}>
-          <RenderField deep={deep} name="input" />
-        </form>
-      )}
-    </Form>
+    <Formik
+      initialValues={init}
+      onSubmit={console.log}
+      validate={() => ({ "input-0": "error" })}
+    >
+      <Form>
+        <RenderField deep={deep} name="input" />
+      </Form>
+    </Formik>
   )
 }
 
@@ -29,6 +33,7 @@ const RenderField: React.FC<{ deep: number; name: string }> = ({
         return (
           <div key={newName} style={style}>
             <Field
+              type="text"
               name={newName}
               placeholder={newName}
               component={FieldInput}
@@ -40,14 +45,15 @@ const RenderField: React.FC<{ deep: number; name: string }> = ({
     </>
   )
 }
-const FieldInput: React.FC<FieldRenderProps<string>> = ({
-  input,
-  meta,
+const FieldInput: React.FC<FieldProps<string>> = ({
+  field,
+  meta = {},
+  form: _,
   ...props
 }) => {
   return (
     <div>
-      <input {...input} {...props} />
+      <input {...field} {...props} />
       <div>{meta.touched && meta.error}</div>
     </div>
   )
