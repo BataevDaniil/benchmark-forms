@@ -1448,6 +1448,16 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
+"@reatom/core@^2.0.0-rc14":
+  version "2.0.0-rc14"
+  resolved "https://registry.yarnpkg.com/@reatom/core/-/core-2.0.0-rc14.tgz#2f383d4064594a5dcc5824d5719a00c1a2eec660"
+  integrity sha512-w3ie4gFJ6Pd9pkv03G7a3uIriKnJGuSLvrxQCYTOWBYYtLx59eenIQHW+fShANNA/8tBV7hE/skLsJo7ak37cw==
+
+"@reatom/react@^2.0.0-rc5":
+  version "2.0.0-rc5"
+  resolved "https://registry.yarnpkg.com/@reatom/react/-/react-2.0.0-rc5.tgz#ecf72e40980d5f49a834e5df1f58565af1a5f29c"
+  integrity sha512-GVPS2kjMYjMYTh07qYR8D6XBAj9FOvt9RGl3ZTK3ct5quWaMzutX+QQMMybVjuAlo3nKO0dC5JJ/uCyER2gatQ==
+
 "@rollup/plugin-node-resolve@^7.1.1":
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-node-resolve/-/plugin-node-resolve-7.1.3.tgz#80de384edfbd7bfc9101164910f86078151a3eca"
@@ -11025,6 +11035,13 @@ url@^0.11.0:
   dependencies:
     punycode "1.3.2"
     querystring "0.2.0"
+
+use-subscription@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/use-subscription/-/use-subscription-1.5.1.tgz#73501107f02fad84c6dd57965beb0b75c68c42d1"
+  integrity sha512-Xv2a1P/yReAjAbhylMfFplFKj9GssgTwN7RlcTxBujFQcloStWNDQdc4g4NRWH9xS4i/FDk04vQBptAXoF3VcA==
+  dependencies:
+    object-assign "^4.1.1"
 
 use@^3.1.0:
   version "3.1.1"
