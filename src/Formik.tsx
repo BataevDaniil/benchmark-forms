@@ -13,6 +13,7 @@ export const FormikForm = () => {
     >
       <Form>
         <RenderField deep={deep} name="input" />
+        <button type="submit">submit</button>
       </Form>
     </Formik>
   )

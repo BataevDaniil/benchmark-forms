@@ -7,8 +7,10 @@ export const ReatomForm = () => {
   return (
     <Form initialValues={init} onSubmit={console.log} subscription={{}}>
       {() => (
+        // TODO: add handle submit
         <form>
           <RenderField deep={deep} name="input" />
+          <button type="submit">submit</button>
         </form>
       )}
     </Form>

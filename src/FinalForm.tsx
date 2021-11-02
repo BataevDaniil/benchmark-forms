@@ -8,6 +8,7 @@ export const FinalForm = () => {
       {({ handleSubmit }) => (
         <form onSubmit={handleSubmit}>
           <RenderField deep={deep} name="input" />
+          <button type="submit">submit</button>
         </form>
       )}
     </Form>

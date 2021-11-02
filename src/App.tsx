@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 import { FinalForm } from "./FinalForm"
 import { FormikForm } from "./Formik"
 import { ReatomForm } from "./reatom-form"
+import { ReactHookForm } from "./react-hook-form"
 
 const App = () => {
   return (
@@ -20,6 +21,9 @@ const App = () => {
         </Route>
         <Route path="/reatom-form">
           <ReatomForm />
+        </Route>
+        <Route path="/react-hook-form">
+          <ReactHookForm />
         </Route>
       </Switch>
     </Router>
@@ -38,6 +42,9 @@ const Navigation = () => {
         </li>
         <li>
           <Link to="/reatom-form">reatom-form</Link>
+        </li>
+        <li>
+          <Link to="/react-hook-form">react-hook-form</Link>
         </li>
       </ul>
     </nav>
