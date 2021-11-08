@@ -33,6 +33,7 @@ const RenderField: React.FC<{ deep: number; name: string }> = ({
               name={newName}
               placeholder={newName}
               component={FieldInput}
+              subscription={{ value: true }}
             />
             <RenderField deep={deep - 1} name={newName} />
           </div>

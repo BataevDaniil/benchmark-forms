@@ -1,2 +1,2 @@
-export const count = 5
-export const deep = 3
+export const count = 4
+export const deep = 5
